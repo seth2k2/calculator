@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+    <div class="wrapper">
+      
+    <div id="subwrap">
+        <div id="output">
+            0
+        </div>
+
+        <div class="buttons">
+
+          <div class="buttn-row">
+            <button id="clear" class="buttn" onclick="otherPress(this)">
+                AC
+            </button>
+            <button class="buttn" onclick="otherPress(this)">
+                &larr;
+            </button>
+            <button class="buttn" onclick="getOperator(this)">
+                &divide;
+            </button>
+          </div>
+
+          <div class="buttn-row">
+            <button class="buttn" onclick="getDigit(this)">
+                7
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                8
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                9
+            </button>
+            <button class="buttn" onclick="getOperator(this)">
+                &times;
+            </button>
+          </div>
+
+          <div class="buttn-row">
+            <button class="buttn" onclick="getDigit(this)">
+                4
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                5
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                6
+            </button>
+            <button class="buttn" onclick="getOperator(this)">
+                &minus;
+            </button>
+          </div>
+
+          <div class="buttn-row">
+            <button class="buttn" onclick="getDigit(this)">
+                1
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                2
+            </button>
+            <button class="buttn" onclick="getDigit(this)">
+                3
+            </button>
+            <button class="buttn" onclick="getOperator(this)">
+                &plus;
+            </button>
+          </div>
+
+          <div class="buttn-row">
+            <button id="zero" class="buttn" onclick="getDigit(this)">
+                0
+            </button>
+            <button class="buttn" onclick="otherPress(this)">
+                &equals;
+            </button>
+          </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
